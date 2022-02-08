@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @media screen {
+        div.maDiv {
+          margin-left: auto;
+          margin-right: auto;
+          display: inline-block;
+          background-color: #ffdfbf;
+        }
+        div.monBlock {
+          background-color: #ccff99;
+          float: left;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        div.maDiv {
+          width: 1200px;
+          height: 95vh;
+          text-align: center;
+        }
+        div.monBlock {
+          float: none;
+          display: inline-block;
+          width: 24%;
+          height: 96%;
+          margin: 0.3%;
+        }
+      }
+      @media screen and (min-width: 961px) and (max-width: 1199px) {
+        div.maDiv {
+          width: 961px;
+          height: 95vh;
+          text-align: center;
+        }
+        div.monBlock {
+          display: inline-block;
+          width: 32%;
+          height: 49%;
+          margin: 3px;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 960px) {
+        div.maDiv {
+          width: 768px;
+          height: 95vh;
+          text-align: center;
+        }
+
+        div.monBlock {
+          float: none;
+          display: inline-block;
+          width: 48%;
+          height: 49%;
+          margin: 3px;
+        }
+      }
+      @media screen and (min-width: 480px) and (max-width: 767px) {
+        div.maDiv {
+          width: 480px;
+          height: 95vh;
+          text-align: center;
+        }
+        div.monBlock {
+          float: none;
+          display: inline-block;
+          width: 97%;
+          height: 22%;
+          margin: 3px;
+        }
+      }
+      @media screen and (max-width: 479px) {
+        div.maDiv {
+          width: 100%;
+          height: 95vh;
+          text-align: center;
+        }
+        div.monBlock {
+          float: none;
+          display: inline-block;
+          width: 99%;
+          height: 24%;
+          margin: 3px;
+        }
+      }
+
+      /*
+      	ici mettre le style des medias
+      	media >= 1200
+      	961 <= media <= 1199
+      	768 <= media <= 960
+      	480 <= media <= 767
+      	media <= 479
+      */
+    </style>
+  </head>
+  <body>
+    <div class="maDiv">
+      <div class="monBlock"></div>
+      <div class="monBlock"></div>
+      <div class="monBlock"></div>
+      <div class="monBlock"></div>
+    </div>
+  </body>
+</html>
